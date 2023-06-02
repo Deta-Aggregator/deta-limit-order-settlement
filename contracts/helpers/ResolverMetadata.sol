@@ -2,7 +2,7 @@
 
 pragma solidity 0.8.19;
 
-import "@1inch/delegating/contracts/interfaces/ITokenizedDelegationPod.sol";
+import "@deta/delegating/contracts/interfaces/ITokenizedDelegationPod.sol";
 
 contract ResolverMetadata {
     error NotRegisteredDelegatee();

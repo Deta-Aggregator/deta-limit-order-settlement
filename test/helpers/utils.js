@@ -1,6 +1,6 @@
 const hre = require('hardhat');
 const { ethers } = hre;
-const { constants } = require('@1inch/solidity-utils');
+const { constants } = require('@deta/solidity-utils');
 
 const expBase = 999999952502977513n; // 0.05^(1/(2 years)) means 95% value loss over 2 years
 

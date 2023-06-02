@@ -1,4 +1,4 @@
-const { expect, ether } = require('@1inch/solidity-utils');
+const { expect, ether } = require('@deta/solidity-utils');
 const { ethers } = require('hardhat');
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
 
@@ -11,7 +11,7 @@ describe('FeeBankCharger', function () {
 
     async function initContracts() {
         const TokenPermitMock = await ethers.getContractFactory('ERC20PermitMock');
-        const inch = await TokenPermitMock.deploy('1INCH', '1INCH', addr.address, ether('1000'));
+        const inch = await TokenPermitMock.deploy('deta', 'deta', addr.address, ether('1000'));
         await inch.deployed();
         const FeeBankCharger = await ethers.getContractFactory('FeeBankCharger');
         const charger = await FeeBankCharger.deploy(inch.address);

@@ -2,7 +2,7 @@
 
 pragma solidity 0.8.19;
 
-import "@1inch/solidity-utils/contracts/libraries/UniERC20.sol";
+import "@deta/solidity-utils/contracts/libraries/UniERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 /// @title Contract with simple whitelist

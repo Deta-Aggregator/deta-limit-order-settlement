@@ -1,4 +1,4 @@
-const { time, trim0x } = require('@1inch/solidity-utils');
+const { time, trim0x } = require('@deta/solidity-utils');
 const { assert } = require('chai');
 const { keccak256 } = require('ethers/lib/utils');
 

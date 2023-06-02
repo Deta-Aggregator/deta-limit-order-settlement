@@ -3,8 +3,8 @@
 pragma solidity 0.8.19;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@1inch/limit-order-protocol-contract/contracts/interfaces/IOrderMixin.sol";
-import "@1inch/solidity-utils/contracts/libraries/SafeERC20.sol";
+import "@deta/limit-order-protocol-contract/contracts/interfaces/IOrderMixin.sol";
+import "@deta/solidity-utils/contracts/libraries/SafeERC20.sol";
 import "./interfaces/ISettlement.sol";
 import "./interfaces/IResolver.sol";
 import "./libraries/DynamicSuffix.sol";

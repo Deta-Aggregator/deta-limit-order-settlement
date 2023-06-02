@@ -42,8 +42,8 @@ module.exports = {
     solidity: {
         compilers: [DEFAULT_COMPILER_SETTINGS],
         overrides: {
-            '@1inch/limit-order-protocol-contract/contracts/LimitOrderProtocol.sol': LOW_OPTIMIZER_COMPILER_SETTINGS,
-            'contracts/hardhat-dependency-compiler/@1inch/limit-order-protocol-contract/contracts/LimitOrderProtocol.sol': LOW_OPTIMIZER_COMPILER_SETTINGS,
+            '@deta/limit-order-protocol-contract/contracts/LimitOrderProtocol.sol': LOW_OPTIMIZER_COMPILER_SETTINGS,
+            'contracts/hardhat-dependency-compiler/@deta/limit-order-protocol-contract/contracts/LimitOrderProtocol.sol': LOW_OPTIMIZER_COMPILER_SETTINGS,
         },
     },
     networks,
@@ -57,12 +57,12 @@ module.exports = {
     },
     dependencyCompiler: {
         paths: [
-            '@1inch/solidity-utils/contracts/mocks/TokenMock.sol',
-            '@1inch/solidity-utils/contracts/mocks/ERC20PermitMock.sol',
-            '@1inch/erc20-pods/contracts/mocks/PodMock.sol',
-            '@1inch/st1inch/contracts/St1inch.sol',
-            '@1inch/limit-order-protocol-contract/contracts/LimitOrderProtocol.sol',
-            '@1inch/limit-order-protocol-contract/contracts/mocks/WrappedTokenMock.sol',
+            '@deta/solidity-utils/contracts/mocks/TokenMock.sol',
+            '@deta/solidity-utils/contracts/mocks/ERC20PermitMock.sol',
+            '@deta/erc20-pods/contracts/mocks/PodMock.sol',
+            '@deta/stdeta/contracts/Stdeta.sol',
+            '@deta/limit-order-protocol-contract/contracts/LimitOrderProtocol.sol',
+            '@deta/limit-order-protocol-contract/contracts/mocks/WrappedTokenMock.sol',
         ],
     },
     zksolc: {

@@ -2,7 +2,7 @@
 
 pragma solidity 0.8.19;
 
-import "@1inch/limit-order-protocol-contract/contracts/interfaces/ITakerInteraction.sol";
+import "@deta/limit-order-protocol-contract/contracts/interfaces/ITakerInteraction.sol";
 import "./IFeeBankCharger.sol";
 
 interface ISettlement is ITakerInteraction, IFeeBankCharger {

@@ -2,7 +2,7 @@
 
 pragma solidity 0.8.19;
 
-import "@1inch/solidity-utils/contracts/libraries/AddressLib.sol";
+import "@deta/solidity-utils/contracts/libraries/AddressLib.sol";
 
 library TokensAndAmounts {
     struct Data {

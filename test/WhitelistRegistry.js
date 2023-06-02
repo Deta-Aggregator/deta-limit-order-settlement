@@ -1,4 +1,4 @@
-const { expect, constants, ether } = require('@1inch/solidity-utils');
+const { expect, constants, ether } = require('@deta/solidity-utils');
 const { ethers } = require('hardhat');
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
 const { expBase } = require('./helpers/utils');
@@ -10,18 +10,18 @@ const WHITELIST_SIZE = WHITELIST_LIMIT / 5;
 
 describe('WhitelistRegistry', function () {
     let addrs;
-    let st1inch;
+    let stdeta;
 
     before(async function () {
         addrs = await ethers.getSigners();
-        const St1inch = await ethers.getContractFactory('St1inch');
-        st1inch = await St1inch.deploy(constants.ZERO_ADDRESS, expBase, addrs[0].address);
-        await st1inch.deployed();
+        const Stdeta = await ethers.getContractFactory('Stdeta');
+        stdeta = await Stdeta.deploy(constants.ZERO_ADDRESS, expBase, addrs[0].address);
+        await stdeta.deployed();
     });
 
     async function initContracts() {
         const PowerPodMock = await ethers.getContractFactory('PowerPodMock');
-        const rewardableDelegationPod = await PowerPodMock.deploy('reward1INCH', 'reward1INCH', st1inch.address);
+        const rewardableDelegationPod = await PowerPodMock.deploy('rewarddeta', 'rewarddeta', stdeta.address);
         await rewardableDelegationPod.deployed();
         const WhitelistRegistry = await ethers.getContractFactory('WhitelistRegistry');
         const whitelistRegistry = await WhitelistRegistry.deploy(

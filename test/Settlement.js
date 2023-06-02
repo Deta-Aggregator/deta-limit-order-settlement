@@ -1,8 +1,8 @@
-const { time, expect, ether, trim0x, timeIncreaseTo, getPermit, getPermit2, compressPermit, permit2Contract } = require('@1inch/solidity-utils');
+const { time, expect, ether, trim0x, timeIncreaseTo, getPermit, getPermit2, compressPermit, permit2Contract } = require('@deta/solidity-utils');
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
 const { ethers } = require('hardhat');
 const { deploySwapTokens, getChainId } = require('./helpers/fixtures');
-const { buildOrder, signOrder, compactSignature, fillWithMakingAmount, buildMakerTraits } = require('@1inch/limit-order-protocol-contract/test/helpers/orderUtils');
+const { buildOrder, signOrder, compactSignature, fillWithMakingAmount, buildMakerTraits } = require('@deta/limit-order-protocol-contract/test/helpers/orderUtils');
 const { buildFusions } = require('./helpers/fusionUtils');
 
 describe('Settlement', function () {

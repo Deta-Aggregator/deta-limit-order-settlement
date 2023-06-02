@@ -1,4 +1,4 @@
-Contributing to 1inch
+Contributing to deta
 =======
 
 Thanks for taking the time to contribute! All types of contributions are encouraged and valued. Please make sure to read the sections below before making your contribution. It will make it a lot easier for maintainers and speeds up the merge of your contribution.

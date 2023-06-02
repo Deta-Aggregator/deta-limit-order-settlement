@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract GovernanceMothership is ERC20 {
     IERC20 public inchToken;
 
-    constructor (IERC20 inchToken_) ERC20("1INCH Token (Staked)", "st1INCH") {
+    constructor (IERC20 inchToken_) ERC20("deta Token (Staked)", "stdeta") {
         inchToken = inchToken_;
     }
 

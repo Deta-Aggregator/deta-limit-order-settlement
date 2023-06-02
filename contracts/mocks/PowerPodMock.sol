@@ -3,10 +3,10 @@
 pragma solidity 0.8.19;
 
 import "../PowerPod.sol";
-import "@1inch/st1inch/contracts/interfaces/ISt1inch.sol";
+import "@deta/stdeta/contracts/interfaces/IStdeta.sol";
 
 contract PowerPodMock is PowerPod {
-    constructor(string memory name, string memory symbol, ISt1inch st1inch) PowerPod(name, symbol, st1inch) {}
+    constructor(string memory name, string memory symbol, IStdeta stdeta) PowerPod(name, symbol, stdeta) {}
 
     function mint(address account, uint256 amount) external {
         _mint(account, amount);

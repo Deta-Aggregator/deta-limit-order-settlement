@@ -2,9 +2,9 @@
 
 pragma solidity 0.8.19;
 
-import "@1inch/solidity-utils/contracts/libraries/UniERC20.sol";
-import "@1inch/solidity-utils/contracts/libraries/AddressSet.sol";
-import "@1inch/st1inch/contracts/interfaces/IVotable.sol";
+import "@deta/solidity-utils/contracts/libraries/UniERC20.sol";
+import "@deta/solidity-utils/contracts/libraries/AddressSet.sol";
+import "@deta/stdeta/contracts/interfaces/IVotable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 /// @title Contract with trades resolvers whitelist

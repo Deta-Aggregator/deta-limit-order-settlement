@@ -5,7 +5,7 @@ pragma solidity 0.8.19;
 import "../interfaces/IResolver.sol";
 import "../interfaces/ISettlement.sol";
 import "../libraries/TokensAndAmounts.sol";
-import "@1inch/solidity-utils/contracts/libraries/SafeERC20.sol";
+import "@deta/solidity-utils/contracts/libraries/SafeERC20.sol";
 
 contract ResolverMock is IResolver {
     error OnlyOwner();

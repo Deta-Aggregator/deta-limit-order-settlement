@@ -1,7 +1,7 @@
 const { ethers } = require('hardhat');
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
-const { signOrder, buildOrder, compactSignature, fillWithMakingAmount } = require('@1inch/limit-order-protocol-contract/test/helpers/orderUtils');
-const { expect, ether, trim0x } = require('@1inch/solidity-utils');
+const { signOrder, buildOrder, compactSignature, fillWithMakingAmount } = require('@deta/limit-order-protocol-contract/test/helpers/orderUtils');
+const { expect, ether, trim0x } = require('@deta/solidity-utils');
 const { deploySwapTokens, getChainId, deploySimpleRegistry } = require('./helpers/fixtures');
 const { buildFusions } = require('./helpers/fusionUtils');
 

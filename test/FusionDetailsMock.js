@@ -1,7 +1,7 @@
 const { ethers } = require('hardhat');
 const { BigNumber } = require('ethers');
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
-const { expect, constants, time } = require('@1inch/solidity-utils');
+const { expect, constants, time } = require('@deta/solidity-utils');
 const { buildFusions } = require('./helpers/fusionUtils');
 
 describe('FusionDetailsMock', function () {

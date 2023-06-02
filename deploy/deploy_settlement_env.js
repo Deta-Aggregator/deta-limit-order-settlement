@@ -1,10 +1,10 @@
 const hre = require('hardhat');
 const { getChainId, ethers } = hre;
 const { idempotentDeployGetContract } = require('../test/helpers/utils.js');
-const { ether } = require('@1inch/solidity-utils');
+const { ether } = require('@deta/solidity-utils');
 
 const INCH_ADDR = '0x111111111117dC0aa78b770fA6A738034120C302';
-const ST1INCH_ADDR = '0x9A0C8Ff858d273f57072D714bca7411D717501D7';
+const STdeta_ADDR = '0x9A0C8Ff858d273f57072D714bca7411D717501D7';
 const ROUTER_V5_ADDR = '0x1111111254EEB25477B68fb85Ed929f73A960582';
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
@@ -15,7 +15,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     const { deployer } = await getNamedAccounts();
 
-    const st1inch = (await ethers.getContractFactory('St1inch')).attach(ST1INCH_ADDR);
+    const stdeta = (await ethers.getContractFactory('Stdeta')).attach(STdeta_ADDR);
 
     const settlement = await idempotentDeployGetContract(
         'Settlement',
@@ -38,7 +38,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     const delegation = await idempotentDeployGetContract(
         'PowerPod',
-        ['Delegated st1INCH', 'dst1INCH', st1inch.address],
+        ['Delegated stdeta', 'dstdeta', stdeta.address],
         deployments,
         deployer,
         'PowerPod',

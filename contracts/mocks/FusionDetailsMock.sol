@@ -3,7 +3,7 @@
 pragma solidity 0.8.19;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@1inch/solidity-utils/contracts/libraries/AddressLib.sol";
+import "@deta/solidity-utils/contracts/libraries/AddressLib.sol";
 
 import "../libraries/FusionDetails.sol";
 
